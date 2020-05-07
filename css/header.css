@@ -1,0 +1,77 @@
+/* header */
+
+.header {
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.header:after {
+  display:block;
+  clear:both;
+  content:"";
+}
+
+.header-inner {
+  max-width: 590px;
+  padding: 0 26px;
+  margin: 0 auto;
+  height: 25px;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* logo */
+
+.logo {
+  width: 25px;
+  height: 23px;
+  float: left;
+}
+
+.logo img {
+  width: 25px;
+  height: 23px;
+}
+
+/* menu */
+
+.menu {
+  font-family: 'Karla', sans-serif;
+  padding: 0;
+  font-size: 13px;
+  width: 220px;
+  height: 25px;
+  line-height: 25px;
+  float: left;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 360px) {
+  .menu {
+    width: 200px;
+    margin-left: 34px;
+  }
+}
+
+.menu > li {
+  display: inline-block;
+  padding: 0;
+  margin-right: 25px;
+}
+
+.menu > li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 360px) {
+  .menu > li {
+    margin-right: 20px;
+  }
+}
+
+.menu > li a {
+  color: #282a2d;
+}
