@@ -90,8 +90,7 @@
 <li><a href="#170719SlideShare-8">所感</a></li>
 <li><a href="#170719SlideShare-9">【7/20追記】Acrobutでのトリミングなしで済む方法</a></li>
 </ul>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h2 id="アクセシブルとは">アクセシブルとは？</h2>
+<h2 id="170719SlideShare-1">アクセシブルとは？</h2>
 <p>まずは「アクセシブル」という単語について。</p>
 <blockquote>
 <p>アクセシブルデザインは、高齢者・障害のある人々の利便性を配慮しつつ、健常者の利便性も確保することを目的として、従来の設計を高齢者や障害のある人々のニーズに合わせ拡張することによって、製品、サービス、建物などがそのまま利用できる潜在顧客数を最大限に増やすための設計ということができます。これにより、ビジネス拡大の効果を得ることが可能になりますが、ビジネスを最優先させるのではなく、高齢者や障害のある人々の利便性を高めることが主たるねらいです。
@@ -99,21 +98,20 @@
 </blockquote>
 <p>出典：<a href="http://www.kyoyohin.org/ja/research/japan/ad_jis_1.php">共用品推進機構 - アクセシブルデザイン関連JIS・基本規格</a></p>
 <p>このように書かれることが多いが、僕は <strong>どのような条件であろうと誰しもが同じようにコンテンツにアクセスすることができること</strong> という認識をしている。僕にとって「障害者対応」という言葉は本質的ではなく、目が見えなかったとしても、耳が聞こえなかったとしても、テクノロジーを利用すれば健常者と同じようにコンテンツを参照できるのだから、当然そうあるべきである、というもの。（似て非なるもの、というか。やっていることは同じかもしれないが、捉え方の問題）</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h2 id="アクセシビリティとスライドのアップロードに関する事情">アクセシビリティと、スライドのアップロードに関する事情</h2>
+<h2 id="170719SlideShare-2">アクセシビリティと、スライドのアップロードに関する事情</h2>
 <p>ここからは、スライドとアクセシビリティの関係について。</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h3 id="１speakerdeckでは情報スライドの内容にアクセスできない">（１）SpeakerDeckでは情報（スライドの内容）にアクセスできない</h3>
+<h3 id="170719SlideShare-2-1">（１）SpeakerDeckでは情報（スライドの内容）にアクセスできない</h3>
 <p>以前、スライドを<a href="https://speakerdeck.com/">SpeakerDeck</a>にて公開した時に、スクリーンリーダーユーザーである <a href="https://twitter.com/ma10?ref_src=twsrc%5Etfw&amp;ref_url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F2017%2F07%2F19%2Fslideshare%2F">@ma10</a> さんが以下のようなツイートをなされていた。</p>
-<!-- raw HTML omitted -->
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">んー、Speaker Deckかあ。。。良いまとめだというツイートを見かけたけど、内容確認できないので紹介は断念。 <a href="https://t.co/oFzTw8NZ6W">https://t.co/oFzTw8NZ6W</a></p>&mdash; Max/なかね まさふみ (@ma10) <a href="https://twitter.com/ma10/status/803519996663992320?ref_src=twsrc%5Etfw">November 29, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <p>驚いていると、 <a href="https://twitter.com/magi1125">@magi1125</a> さんからアドバイスのメッセージをいただいた。</p>
 <ul>
 <li>SpeakerDeckはスライドを画像として表示するのみである</li>
 <li>テキスト情報として内容にアクセスすることができない</li>
 </ul>
 <p>なんてこった&hellip;</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h3 id="２slideshareの場合は中身を読みテキストとしてwebページ上に表示される">（２）SlideShareの場合は中身を読みテキストとしてWebページ上に表示される</h3>
+<h3 id="170719SlideShare-2-2">（２）SlideShareの場合は中身を読みテキストとしてWebページ上に表示される</h3>
 <p>SpeakerDeckに関しショックを受けたところで、「SlideShareならばその問題が起こらない」という情報も得た。</p>
 <ul>
 <li>文字を画像にしない等、適切な方法でSlideShareにアップロードすればスライド内のテキストを抜き出してくれるため、スクリーンリーダーユーザーでも内容を把握することができる</li>
@@ -122,11 +120,12 @@
 <p>しかし、SpeakerDeckだと起こる困ることは起こらなくても、SlideShareにはSlideShareならではの困ることがあるのであった。
 僕はスライド作成には<a href="https://www.apple.com/jp/keynote/">Keynote</a>を使っている。困る問題とは、Keynoteバージョン6以降で生成したPDFをSlideShareにアップロードすると、作ったスライド上からテキスト部分がすべて表示されなくなってしまう、という問題だ。実際はそこにあるけどただ映らないのみ。スライド外にテキスト出力はされていた。
 今回、どのようにすれば問題なくSlideShareにアップロードすることができるのかを調べた。</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h2 id="keynoteで作ったスライドをslideshareにアップロードする手順">Keynoteで作ったスライドをSlideShareにアップロードする手順</h2>
+<h2 id="170719SlideShare-3">Keynoteで作ったスライドをSlideShareにアップロードする手順</h2>
 <p>そのうちSlideShare側がバグを解消してくれるのでは？という点に関して。<a href="http://qiita.com/yasulab/items/49511c27179be454d568#%E5%85%AC%E5%BC%8F%E3%81%AE%E5%9B%9E%E7%AD%94">KeynoteのスライドをSlideShareにアップロードすると日本語が表示されない問題 - Qiita / 公式の回答 </a> によると、残念ながら前述の文字が消える問題を解決する対応は時間がかかるようで、こちら側が頑張らないといけない…
 <a href="https://twitter.com/magi1125">@magi1125</a> さんがツイートしていた解決策をベースに進める。</p>
-<!-- raw HTML omitted -->
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">FAQぽいので。KeynoteからSlideShare用に(日本語表示されてテキストも抽出される)PDFを出力する方法。印刷メニューからカスタムサイズで160/90mm or 160/120mmに設定して「AcrobatでPDF保存」的なのを選ぶ。リンクは死ぬけどあとは大丈夫。</p>&mdash; Rikiya Ihara (@magi1125) <a href="https://twitter.com/magi1125/status/769361345892364288?ref_src=twsrc%5Etfw">August 27, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <p>この検証では以下のバージョンを使用する。</p>
 <ul>
 <li>Keynote バージョン7.2（4582）</li>
@@ -148,7 +147,7 @@
 <p>という流れ。画面を見つつ解説すると</p>
 <p><img src="/images/post/20170719slideshare/20170719slideshare_1.png" alt="keynoteの画面"></p>
 <p>まずはKeynoteメニューの「ファイル」→「プリント」。</p>
-<!-- raw HTML omitted -->
+<p><img src="/images/post/20170719slideshare/20170719slideshare_2.png" width="456" alt="keynoteメニュー"></p>
 <p>左下にある「PDF」を「Save as Adobe PDF」に変更する。Adobe PDFの設定は「標準」を選択。</p>
 <p><img src="/images/post/20170719slideshare/20170719slideshare_3.png" alt="プリント画面"></p>
 <p>Adobe Acrobat Proで先ほどのファイルを開き、右側の検索窓から「トリミング」と検索（どこにあるかわからなかったので検索した方が早かった）。その後「ページをトリミング」を選択。</p>
@@ -157,10 +156,9 @@
 <p><img src="/images/post/20170719slideshare/20170719slideshare_5.png" alt="トリミング詳細画面"></p>
 <p>完成したPDFをSlideShareへアップロードすると、文字も消えておらず無用な余白もない綺麗な状態かつアクセシブルなスライドにできる。
 次に、Adobe Acrobut Proが手に入らず、使わないでやる必要がある場合の方法を記載する。</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h2 id="adobe-acrobut-pro-を使わない場合">Adobe Acrobut Pro を使わない場合</h2>
+<h2 id="170719SlideShare-4">Adobe Acrobut Pro を使わない場合</h2>
 <p>Adobe Acrobut Proを使わず、SlideShareへスライドをアップロードするにはどうするとよいか？</p>
-<h3 id="１keynoteの場合文字が消えるバグの回避法">（１）Keynoteの場合（文字が消えるバグの回避法）</h3>
+<h3>（１）Keynoteの場合（文字が消えるバグの回避法）</h3>
 <ul>
 <li>Keynoteの書き出しの「イメージ」を選び、すべてのページを画像で書き出した後、全ページにひとつずつ画像をかぶせ、通常のPDFで書き出し、アップロードする
 <ul>
@@ -172,14 +170,13 @@
 <li>ヒラギノなどOS Xの標準フォント以外のフォントを使う（ <a href="http://qiita.com/yasulab/items/49511c27179be454d568#%E6%A1%885-os-x%E3%81%AE%E6%A8%99%E6%BA%96%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88-%E3%83%92%E3%83%A9%E3%82%AE%E3%83%8E%E3%81%AA%E3%81%A9-%E4%BB%A5%E5%A4%96%E3%81%AE%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%82%92%E4%BD%BF%E3%81%86">KeynoteのスライドをSlideShareにアップロードすると日本語が表示されない問題</a> より ）</li>
 <li>文字が消える事象が起こるKeynote6より前のKeynote5以前を使う？（手に入るかはわからないが…）</li>
 </ul>
-<h3 id="２keynote以外の場合おそらく文字が消えるバグは起こらない">（２）Keynote以外の場合（おそらく文字が消えるバグは起こらない）</h3>
+<h3>（２）Keynote以外の場合（おそらく文字が消えるバグは起こらない）</h3>
 <ul>
 <li>Googleスライド</li>
 <li>その他スライド作成アプリケーション</li>
 </ul>
 <p>などの手段がある。</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h2 id="完璧は難しい割り切ることも重要なこと">完璧は難しい。「割り切ること」も重要なこと</h2>
+<h2 id="170719SlideShare-5">完璧は難しい。「割り切ること」も重要なこと</h2>
 <p>今回の件を調べるにあたり、SlideShareにアップロードできたと言っても、「それだけで完全にアクセシブルなのか？」という疑問を持っていた。</p>
 <ul>
 <li>SlideShareでは自動出力されたテキスト情報は改行や段落がなくなるので認識しにくいと思うが、テキスト情報だけで読む人は、どのように脳内補正している？</li>
@@ -193,8 +190,7 @@
 <li>「完璧」は難しいこと。そしてスライドの作成者次第な部分が大きすぎる</li>
 </ul>
 <p>という回答をいただいた。割り切るという視点が欠けていたため、目が覚めたようだった。</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h2 id="余談１slideshareにアップロードしたスライドを削除する方法">余談１.SlideShareにアップロードしたスライドを削除する方法</h2>
+<h2 id="170719SlideShare-6">余談１.SlideShareにアップロードしたスライドを削除する方法</h2>
 <p>テストで文字が消えてしまったスライドを削除しようとしたところ、消すまでにかなり迷った。（バグなのか、「Edit」→「Delete presentation」では消えないことがあった）
 最終的には <a href="https://www.linkedin.com/help/linkedin/answer/55028/slideshare-?lang=ja">SlideShare ファイルを削除する | LinkedInヘルプ</a> にたどり着くことで解消できた。</p>
 <blockquote>
@@ -206,19 +202,20 @@
 </ul>
 </blockquote>
 <p>とのこと。</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h2 id="余談２一応あるspeakerdeckのスライドをスクリーンリーダーで読む方法">余談２.一応ある？SpeakerDeckのスライドをスクリーンリーダーで読む方法</h2>
-<!-- raw HTML omitted -->
+<h2 id="170719SlideShare-7">余談２.一応ある？SpeakerDeckのスライドをスクリーンリーダーで読む方法</h2>
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">そういえば、SpeakerDeckだと、SlideShareみたいにテキストの書き出しをしてくれませんが、<a href="https://t.co/xRxKpHgSw7">https://t.co/xRxKpHgSw7</a>というサイトだとテキストの書き出しつけてくれるんですよね。他サイトのスライドをいただきマンモスって感じなのが気にはなりますが。</p>&mdash; 前川 昌幸@オミ岡 (@maepon) <a href="https://twitter.com/maepon/status/874119273949483010?ref_src=twsrc%5Etfw">June 12, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <p>こういう裏技も一応あるようだ。 <a href="http://sssslide.com">SSSSLIDE</a>&hellip;スライド集約サイト？</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h2 id="所感">所感</h2>
+<h2 id="170719SlideShare-8">所感</h2>
 <p>アクセシブルにするためにこのような努力が必要である今の状況には不満がある。
 Keynoteの文字が消える問題の解決対応がまだ先になりそうなSlideShareも、テキストデータが出力されないためにスクリーンリーダーでは読むことができない状態であるSpeakerDeckも。ただPDFで出力してアップロードさえすればスライドの内容になんの無理もなく誰もがアクセスできるようになる未来を望んでいる。
 …と言いつつ、自分の携わっているものがすべてアクセシブルかと言われると違う。もっと頑張らないといけない。もっと勉強と実験を繰り返し、関わるものを可能な限りアクセシブルにしなければ。</p>
 <p>そして、この件で相談に乗っていただいた <a href="https://twitter.com/magi1125">@magi1125</a> さんには本当に感謝しかありません。ありがとうございます！</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h2 id="720追記acrobutでのトリミングなしで済む方法">【7/20追記】Acrobutでのトリミングなしで済む方法</h2>
-<!-- raw HTML omitted -->
+<h2 id="170719SlideShare-9">【7/20追記】Acrobutでのトリミングなしで済む方法</h2>
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">記事みてわかりました。Keynoteでcmd+p➞[詳細を表示]➞ダイアログ右t中段のKeynoteと書かれたセレクトボックスで[ページ属性]を選択➞紙のサイズでカスタムサイズ➞90mm,160mmとしてください。これで余白が消えます。あとはSave as Adobe PDF!</p>&mdash; Rikiya Ihara (@magi1125) <a href="https://twitter.com/magi1125/status/887654118201806848?ref_src=twsrc%5Etfw">July 19, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <p>この記事を公開したところ、<a href="https://twitter.com/magi1125">@magi1125</a> さんからフィードバックをいただけた。</p>
 <blockquote>
 <blockquote>
@@ -231,7 +228,7 @@ Keynoteの文字が消える問題の解決対応がまだ先になりそうなS
 <p><img src="/images/post/20170719slideshare/20170719slideshare_6.png" alt="プリント画面"></p>
 <p>ダイアログ中段の 「Keynote」と書かれたセレクトボックスで「ページ属性」を選択。</p>
 <p><img src="/images/post/20170719slideshare/20170719slideshare_7.png" alt="プリント詳細画面">
-<!-- raw HTML omitted --></p>
+<p><img src="/images/post/20170719slideshare/20170719slideshare_8.png" width="269" alt="ダイアログ中段のセレクトボックス"></p>
 <p>「用紙サイズ」のセレクトボックスで「A4」になっているところを「カスタムサイズを管理&hellip;」に変更。</p>
 <p><img src="/images/post/20170719slideshare/20170719slideshare_9.png" alt="用紙サイズの変更"></p>
 <p>新しいサイズを設定できるので、左側の 「+」から新規サイズを追加する。
