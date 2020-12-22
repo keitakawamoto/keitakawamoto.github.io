@@ -4,13 +4,19 @@
     <title>Orangebomb</title>
     <link>https://blog.orangebomb.org/</link>
     <description>Recent content on Orangebomb</description>
-    <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 07 May 2020 20:47:42 +0900</lastBuildDate>
+    <lastBuildDate>The, 22 Dec 2020 21:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://blog.orangebomb.org/index.xml" rel="self" type="application/rss+xml" />
     
-    
+    <item>
+      <title>電磁波と光、色と視覚</title>
+      <link>https://blog.orangebomb.org/blog/2020/12/22/electromagnetic-waves-and-light--color-and-vision/</link>
+      <pubDate>The, 22 Dec 2020 21:00:00 +0900</pubDate>
+      <guid>https://blog.orangebomb.org/blog/2020/12/22/electromagnetic-waves-and-light--color-and-vision/</guid>
+      <description>人間は多くは視覚を持ち、眼球が光を捉え電気信号に変換し、脳に伝達し光景を識別する。ほとんどのその光景には「色」と呼ばれるものがついている。では光とは何か？色とは何か？</description>
+    </item>
+
     <item>
       <title>なぜなに人間中心設計（HCD）</title>
       <link>https://blog.orangebomb.org/blog/2020/05/07/what-is-hcd/</link>
