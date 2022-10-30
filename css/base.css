@@ -33,6 +33,10 @@ p {
   font-size: .8em;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 hr {
   height: 0px;
   margin: 20px 0;
