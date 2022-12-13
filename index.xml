@@ -5,9 +5,17 @@
     <link>https://blog.orangebomb.org/</link>
     <description>Recent content on Orangebomb</description>
     <language>ja-jp</language>
-    <lastBuildDate>The, 30 Oct 2022 23:00:00 +0900</lastBuildDate>
+    <lastBuildDate>The, 14 Dec 2022 05:00:00 +0900</lastBuildDate>
     
     <atom:link href="https://blog.orangebomb.org/index.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>状況の予測と情報の提供</title>
+      <link>https://blog.orangebomb.org/blog/2022/12/14/forecasting-and-providing/</link>
+      <pubDate>The, 14 Dec 2022 05:00:00 +0900</pubDate>
+      <guid>https://blog.orangebomb.org/blog/2022/12/14/forecasting-and-providing/</guid>
+      <description>誰かとのコミュニケーションやルール・制度に従うとき、相手や設計者の視点に立ち考察した上で情報の不足が予想される場合、情報提供できる場合があります。</description>
+    </item>
 
     <item>
       <title>考えられる可能性を知る - 多角的に捉える訓練 / freee Design Night in Fukuoka</title>
