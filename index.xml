@@ -5,9 +5,17 @@
     <link>https://blog.orangebomb.org/</link>
     <description>Recent content on Orangebomb</description>
     <language>ja-jp</language>
-    <lastBuildDate>The, 14 Dec 2022 05:00:00 +0900</lastBuildDate>
+    <lastBuildDate>The, 17 Dec 2023 08:00:00 +0900</lastBuildDate>
     
     <atom:link href="https://blog.orangebomb.org/index.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>歴史と時系列の位置関係</title>
+      <link>https://blog.orangebomb.org/blog/2023/12/17/timeline/</link>
+      <pubDate>The, 17 Dec 2023 08:00:00 +0900</pubDate>
+      <guid>https://blog.orangebomb.org/blog/2023/12/17/timeline/</guid>
+      <description>歴史を捉えるとき、時系列の位置関係を意識しながら捉えると私はとてもおもしろいです、というお話です。19世紀から20世紀の史実からいくつかをピックアップして並べています。</description>
+    </item>
 
     <item>
       <title>状況の予測と情報の提供</title>
