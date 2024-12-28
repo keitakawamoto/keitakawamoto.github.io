@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
+
   <url>
     <loc>https://blog.orangebomb.org/</loc>
     <lastmod>2023-12-17T08:00:00+09:00</lastmod>
@@ -43,60 +43,50 @@
   </url>
 
   <url>
-    <loc>https://blog.orangebomb.org/blog/2020/05/07/what-is-hcd/</loc>
-    <lastmod>2020-05-07T20:47:42+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.orangebomb.org/blog/2018/05/11/orangebomb-symbol-making/</loc>
     <lastmod>2018-05-11T09:31:02+09:00</lastmod>
   </url>
-  
+
   <url>
     <loc>https://blog.orangebomb.org/blog/2018/05/01/80s-tv-title/</loc>
     <lastmod>2018-05-01T00:00:00+09:00</lastmod>
   </url>
-  
+
   <url>
     <loc>https://blog.orangebomb.org/blog/2017/12/10/anaglyph/</loc>
     <lastmod>2017-12-10T00:00:00+09:00</lastmod>
   </url>
-  
+
   <url>
     <loc>https://blog.orangebomb.org/blog/2017/10/13/inclusive-design-patterns/</loc>
     <lastmod>2017-10-13T00:00:00+09:00</lastmod>
   </url>
-  
+
   <url>
     <loc>https://blog.orangebomb.org/blog/2017/10/02/sangosan/</loc>
     <lastmod>2017-10-02T00:00:00+09:00</lastmod>
   </url>
-  
+
   <url>
     <loc>https://blog.orangebomb.org/blog/2017/08/25/career-keynote/</loc>
     <lastmod>2017-08-25T08:36:15+09:00</lastmod>
   </url>
-  
+
   <url>
     <loc>https://blog.orangebomb.org/blog/2017/08/04/lolipop-rebranding/</loc>
     <lastmod>2017-08-04T12:48:04+09:00</lastmod>
   </url>
-  
+
   <url>
     <loc>https://blog.orangebomb.org/blog/2017/07/25/brain-science/</loc>
     <lastmod>2017-07-25T08:27:03+09:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://blog.orangebomb.org/blog/2017/07/19/slideshare/</loc>
-    <lastmod>2017-07-19T05:34:18+09:00</lastmod>
-  </url>
-  
+
   <url>
     <loc>https://blog.orangebomb.org/blog/2017/02/03/output/</loc>
     <lastmod>2017-02-03T13:54:04+09:00</lastmod>
   </url>
-  
+
   <url>
     <loc>https://blog.orangebomb.org/blog/2016/11/29/web-accessibility/</loc>
     <lastmod>2016-11-29T13:51:11+09:00</lastmod>
@@ -108,10 +98,6 @@
 
   <url>
     <loc>https://blog.orangebomb.org/tags/cognitive-science-principle-rule/</loc>
-  </url>
-
-  <url>
-    <loc>https://blog.orangebomb.org/tags/hcd/</loc>
   </url>
 
   <url>
