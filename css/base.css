@@ -68,8 +68,7 @@ hr {
 /* selection */
 
 ::selection {
-  background: #fa7033;
-  color: #fff;
+  background: rgba(246, 68, 0, 0.1) /* 公式オレンジの#f64400のコードをRGBで表すと246,68,0になる。それを透明度10%にし文字色とのコントラストでWCAG AAAを満たす */;
 }
 
 /* link */
