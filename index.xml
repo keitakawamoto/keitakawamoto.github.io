@@ -5,9 +5,17 @@
     <link>https://blog.orangebomb.org/</link>
     <description>Recent content on Orangebomb</description>
     <language>ja-jp</language>
-    <lastBuildDate>The, 17 Dec 2023 08:00:00 +0900</lastBuildDate>
+    <lastBuildDate>The, 31 Dec 2024 08:00:00 +0900</lastBuildDate>
     
     <atom:link href="https://blog.orangebomb.org/index.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>How Might We: 我々はどうすれば〜できる可能性があるか？（思考法解説）</title>
+      <link>https://blog.orangebomb.org/blog/2024/12/31/how-might-we/</link>
+      <pubDate>The, 31 Dec 2024 08:00:00 +0900</pubDate>
+      <guid>https://blog.orangebomb.org/blog/2024/12/31/how-might-we/</guid>
+      <description>「How Might We…？（HMW）」はIDEOが採用し広く知られるようになったとされる思考法です。「我々はどうすれば〜できる可能性があるか？」という質問を起点とし順序立てて考察を進め、最終的に解となる仮説を導き出していきます。ここではHMWの概要と、個人的に活用している具体的な利用方法を紹介します。</description>
+    </item>
 
     <item>
       <title>歴史と時系列の位置関係</title>
