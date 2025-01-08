@@ -1,5 +1,12 @@
 /* footer */
 
+.profile {
+  max-width: 590px;
+  font-size: 12px;
+  margin: 50px auto 100px;
+  padding: 0;
+}
+
 .footer {
   max-width: 590px;
   font-size: 12px;
@@ -88,10 +95,6 @@
 
 .social li a.pinterest:hover {
   color: #cb1f27;
-}
-
-.social li a.codepen:hover {
-  color: #1b1c1b;
 }
 
 .social li a.instagram:hover {

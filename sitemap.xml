@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
     <loc>https://blog.orangebomb.org/</loc>
@@ -127,6 +126,10 @@
   
   <url>
     <loc>https://blog.orangebomb.org/tags/other/</loc>
+  </url>
+
+  <url>
+    <loc>https://blog.orangebomb.org/profile.html</loc>
   </url>
 
 </urlset>
