@@ -1,5 +1,12 @@
 /* footer */
 
+.profile {
+  max-width: 590px;
+  font-size: 12px;
+  margin: 50px auto 100px;
+  padding: 0;
+}
+
 .footer {
   max-width: 590px;
   font-size: 12px;
