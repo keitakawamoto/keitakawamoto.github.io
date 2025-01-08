@@ -1,130 +1,112 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="author" content="keita_kawamoto">
-  <meta name="description" content="視覚がない、弱い人はどのようにサイトを利用しているのか、使っているのはどんなインターフェイスなのか。ずっと気になっていた。インターフェイスとは目で見えるものだけではなく、音声だけで構成されるインターフェイスもある。では僕らがページを作るとき、具体的にどうすればいいのか？">
-  
-    <title>目が見えない状態を想定したUI設計 &nbsp;-&nbsp; Orangebomb</title>
-  
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="keita_kawamoto">
-  <meta name="twitter:creator" content="keita_kawamoto">
-  <meta name="twitter:title" content="目が見えない状態を想定したUI設計 - Orangebomb">
-  <meta name="twitter:url" content="https://blog.orangebomb.org/blog/2016/11/29/web-accessibility/">
-  <meta name="twitter:description" content="視覚がない、弱い人はどのようにサイトを利用しているのか、使っているのはどんなインターフェイスなのか。ずっと気になっていた。インターフェイスとは目で見えるものだけではなく、音声だけで構成されるインターフェイスもある。では僕らがページを作るとき、具体的にどうすればいいのか？">
-  
-  <meta property="og:title" content="目が見えない状態を想定したUI設計">
-  <meta property="og:url" content="https://blog.orangebomb.org/blog/2016/11/29/web-accessibility/">
-  <meta property="og:description" content="視覚がない、弱い人はどのようにサイトを利用しているのか、使っているのはどんなインターフェイスなのか。ずっと気になっていた。インターフェイスとは目で見えるものだけではなく、音声だけで構成されるインターフェイスもある。では僕らがページを作るとき、具体的にどうすればいいのか？">
-  
-  
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="keita_kawamoto">
+    <meta name="description" content="視覚がない、弱い人はどのようにサイトを利用しているのか、使っているのはどんなインターフェイスなのか。ずっと気になっていた。インターフェイスとは目で見えるものだけではなく、音声だけで構成されるインターフェイスもある。では僕らがページを作るとき、具体的にどうすればいいのか？">
+    <title>目が見えない状態を想定したUI設計 - Orangebomb</title>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="keita_kawamoto">
+    <meta name="twitter:creator" content="keita_kawamoto">
+    <meta name="twitter:title" content="目が見えない状態を想定したUI設計 - Orangebomb">
+    <meta name="twitter:url" content="https://blog.orangebomb.org/blog/2016/11/29/web-accessibility/">
+    <meta name="twitter:description" content="視覚がない、弱い人はどのようにサイトを利用しているのか、使っているのはどんなインターフェイスなのか。ずっと気になっていた。インターフェイスとは目で見えるものだけではなく、音声だけで構成されるインターフェイスもある。では僕らがページを作るとき、具体的にどうすればいいのか？">
+    <meta property="og:title" content="目が見えない状態を想定したUI設計">
+    <meta property="og:url" content="https://blog.orangebomb.org/blog/2016/11/29/web-accessibility/">
+    <meta property="og:description" content="視覚がない、弱い人はどのようにサイトを利用しているのか、使っているのはどんなインターフェイスなのか。ずっと気になっていた。インターフェイスとは目で見えるものだけではなく、音声だけで構成されるインターフェイスもある。では僕らがページを作るとき、具体的にどうすればいいのか？">
     <meta property="og:image" content="https://blog.orangebomb.org/images/ogp.png">
     <meta name="twitter:image" content="https://blog.orangebomb.org/images/ogp.png">
-  
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/header.css">
-  <link rel="stylesheet" href="/css/contents.css">
-  <link rel="stylesheet" href="/css/footer.css">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Karla|Source+Code+Pro">
-  <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/images/apple-touch-icon-192-precomposed.png">
-  <link rel="shortcut icon" href="/images/favicon.ico">
-  <link rel="canonical" href="https://blog.orangebomb.org/blog/2016/11/29/web-accessibility/">
-</head>
-
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contents.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Karla|Source+Code+Pro">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/images/apple-touch-icon-192-precomposed.png">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="canonical" href="https://blog.orangebomb.org/blog/2016/11/29/web-accessibility/">
+  </head>
   <body>
     <div class="header">
-  <div class="header-inner">
-    <header>
-      <h1 class="logo"><a href="https://blog.orangebomb.org"><img src="https://blog.orangebomb.org/images/logo.svg" alt="Orangebomb"></a></h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="/">ARCHIVES</a></li>
-          <li><a href="/tags">TAGS</a></li>
-          <li><a href="/profile.html">PROFILE</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-</div>
-
+      <div class="header-inner">
+        <header>
+          <h1 class="logo"><a href="https://blog.orangebomb.org"><img src="https://blog.orangebomb.org/images/logo.svg" alt="Orangebomb"></a></h1>
+          <nav>
+            <ul class="menu">
+              <li><a href="/">ARCHIVES</a></li>
+              <li><a href="/tags">TAGS</a></li>
+              <li><a href="/profile.html">PROFILE</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
     <div class="container">
       <article>
-  <div class="post">
-    <header>
-      <h1><a href="https://blog.orangebomb.org/blog/2016/11/29/web-accessibility/">目が見えない状態を想定したUI設計</a></h1>
-      <div class="post-date">
-        <div class="day">
-          <time datetime="2016-11-29">2016-11-29</time>
+        <div class="post">
+          <header>
+            <h1><a href="https://blog.orangebomb.org/blog/2016/11/29/web-accessibility/">目が見えない状態を想定したUI設計</a></h1>
+            <div class="post-date">
+              <div class="day">
+                <time datetime="2016-11-29">2016-11-29</time>
+              </div>
+              <div class="tags">
+                <i class="fa fa-tags tag-icon" aria-hidden="true"></i>
+                <span class="sr-only">Tags</span>
+                <ul>
+                  <li><a class="tag-link" href="/tags/interface-interaction/">インターフェイス/インタラクション</a></li>
+                  <li><a class="tag-link" href="/tags/accessibility/">アクセシビリティ</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+          <div class="post-inner">
+            <p>視覚がない、弱い人はどのようにサイトを利用しているのか、使っているのはどんなインターフェイスなのか。ずっと気になっていたというのもあり、「目が見えない状態を想定したUI設計」という内容で、主催した勉強会 <a href="https://dct.connpass.com/event/36278/">Design Casual Talks #1</a> で発表をしました。</p>
+            <p>インターフェイスとは目で見えるものだけではなく、音声だけで構成されるインターフェイスもある。では僕らがページを作るとき、具体的にどうすればいいのか？</p>
+            <div class="iframe-slideshare">
+              <iframe src="//www.slideshare.net/slideshow/embed_code/key/Cpex3V1VvjsR8N" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen=""></iframe>
+              <a href="//www.slideshare.net/keitakawamoto/ui-69634113" title="目が見えない状態を想定したUI設計">目が見えない状態を想定したUI設計</a>
+            </div>
+            <h2 id="出典参考文献">出典・参考文献</h2>
+            <p>すべて2016年9月時点（スライド作成時）の情報を参考にしました。</p>
+            <ul>
+              <li><a href="https://ja.wikipedia.org/wiki/%E8%A6%96%E8%A6%9A%E9%9A%9C%E5%AE%B3%E8%80%85">視覚障害者 - Wikipedia</a></li>
+              <li><a href="http://www.kansai-guidedog.jp/knowledge/disease/">視覚障害とは - 公益財団法人 関西盲導犬協会</a></li>
+              <li><a href="http://www.kochinet.ed.jp/mo-s/mt/post-28.html">視覚障害とは - 高知県立盲学校</a></li>
+              <li><a href="http://kagayaki.akita-pref.ed.jp/shikaku-s/detail.html?id=361&amp;category_id=61">２－１　視覚障害とは - 秋田県立視覚支援学校</a></li>
+              <li><a href="http://www.mhlw.go.jp/toukei/list/108-1b.html">厚生労働省 統計情報・白書 平成18年身体障害児・者実態調査結果</a></li>
+              <li><a href="http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1049785990">視覚障害者 全盲者と弱視者の割合 統計みたいなものが欲しい&hellip; - Yahoo!知恵袋</a></li>
+              <li><a href="http://website-usability.info/2014/04/entry_140415.html">WAI-ARIA の基礎知識 — Website Usability Info</a></li>
+              <li><a href="http://www.webcreativepark.net/html/wai-aria/">WAI-ARIA | HTMLリファレンス</a></li>
+            </ul>
+            <h2 id="まとめ終えて">まとめ終えて</h2>
+            <p>イベントを前に、とにかくアクセシビリティに関する多くの情報を得たくて、<a href="https://www.amazon.co.jp/%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0Web%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B7%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3-WAI-ARIA%E3%81%A7%E5%AE%9F%E7%8F%BE%E3%81%99%E3%82%8B%E3%83%9E%E3%83%AB%E3%83%81%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E7%92%B0%E5%A2%83%E3%81%AEWeb%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E3%83%98%E3%82%A4%E3%83%89%E3%83%B3%E3%83%BB%E3%83%94%E3%82%AB%E3%83%AA%E3%83%B3%E3%82%B0/dp/4862462669">コーディングWebアクセシビリティ</a>を購入しチェックしました。買ってよかった。</p>
+            <p>スクリーンリーダーをどのように使っているのか、WAI-ARIAの具体的な実装はどのように進んでいくのか、まだまだわかっていないので今後も調査・学習を続けていきたい。</p>
+          </div>
         </div>
-        <div class="tags">
-          <i class="fa fa-tags tag-icon" aria-hidden="true"></i>
-          <span class="sr-only">Tags</span>
-          <ul>
-            <li><a class="tag-link" href="/tags/interface-interaction/">インターフェイス/インタラクション</a></li>
-            <li><a class="tag-link" href="/tags/accessibility/">アクセシビリティ</a></li>
-          </ul>
-        </div>
+      </article>
+      <div class="social-btn">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
-    </header>
-    <div class="post-inner">
-      <p>視覚がない、弱い人はどのようにサイトを利用しているのか、使っているのはどんなインターフェイスなのか。ずっと気になっていたというのもあり、「目が見えない状態を想定したUI設計」という内容で、主催した勉強会 <a href="https://dct.connpass.com/event/36278/">Design Casual Talks #1</a> で発表をしました。</p>
-<p>インターフェイスとは目で見えるものだけではなく、音声だけで構成されるインターフェイスもある。では僕らがページを作るとき、具体的にどうすればいいのか？</p>
-
-<div class="iframe-slideshare">
-  <iframe src="//www.slideshare.net/slideshow/embed_code/key/Cpex3V1VvjsR8N" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen=""></iframe>
-  <a href="//www.slideshare.net/keitakawamoto/ui-69634113" title="目が見えない状態を想定したUI設計">目が見えない状態を想定したUI設計</a>
-</div>
-
-<h2 id="出典参考文献">出典・参考文献</h2>
-<p>すべて2016年9月時点（スライド作成時）の情報を参考にしました。</p>
-<ul>
-<li><a href="https://ja.wikipedia.org/wiki/%E8%A6%96%E8%A6%9A%E9%9A%9C%E5%AE%B3%E8%80%85">視覚障害者 - Wikipedia</a></li>
-<li><a href="http://www.kansai-guidedog.jp/knowledge/disease/">視覚障害とは - 公益財団法人 関西盲導犬協会</a></li>
-<li><a href="http://www.kochinet.ed.jp/mo-s/mt/post-28.html">視覚障害とは - 高知県立盲学校</a></li>
-<li><a href="http://kagayaki.akita-pref.ed.jp/shikaku-s/detail.html?id=361&amp;category_id=61">２－１　視覚障害とは - 秋田県立視覚支援学校</a></li>
-<li><a href="http://www.mhlw.go.jp/toukei/list/108-1b.html">厚生労働省 統計情報・白書 平成18年身体障害児・者実態調査結果</a></li>
-<li><a href="http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1049785990">視覚障害者 全盲者と弱視者の割合 統計みたいなものが欲しい&hellip; - Yahoo!知恵袋</a></li>
-<li><a href="http://website-usability.info/2014/04/entry_140415.html">WAI-ARIA の基礎知識 — Website Usability Info</a></li>
-<li><a href="http://www.webcreativepark.net/html/wai-aria/">WAI-ARIA | HTMLリファレンス</a></li>
-</ul>
-<h2 id="まとめ終えて">まとめ終えて</h2>
-<p>イベントを前に、とにかくアクセシビリティに関する多くの情報を得たくて、<a href="https://www.amazon.co.jp/%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0Web%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B7%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3-WAI-ARIA%E3%81%A7%E5%AE%9F%E7%8F%BE%E3%81%99%E3%82%8B%E3%83%9E%E3%83%AB%E3%83%81%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E7%92%B0%E5%A2%83%E3%81%AEWeb%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E3%83%98%E3%82%A4%E3%83%89%E3%83%B3%E3%83%BB%E3%83%94%E3%82%AB%E3%83%AA%E3%83%B3%E3%82%B0/dp/4862462669">コーディングWebアクセシビリティ</a>を購入しチェックしました。買ってよかった。</p>
-<p>スクリーンリーダーをどのように使っているのか、WAI-ARIAの具体的な実装はどのように進んでいくのか、まだまだわかっていないので今後も調査・学習を続けていきたい。</p>
-
     </div>
-  </div>
-</article>
-
-<div class="social-btn">
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
-    </div>
-<footer class="footer">
-  <div class="author">
-    <div class="author-image"></div>
-    <p class="author-name"><a href="https://twitter.com/keita_kawamoto">@keita_kawamoto</a></p>
-    <p class="author-bio">Web Designer. <a href="/profile.html">Profile</a></p>
-  </div>
-  <p class="copyright">
-    <small><span class="copy-c">&copy;</span> keita_kawamoto</small>
-  </p>
-</footer>
-
+    <footer class="footer">
+      <div class="author">
+        <div class="author-image"></div>
+        <p class="author-name"><a href="https://twitter.com/keita_kawamoto">@keita_kawamoto</a></p>
+        <p class="author-bio">Web Designer. <a href="/profile.html">Profile</a></p>
+      </div>
+      <p class="copyright">
+        <small><span class="copy-c">&copy;</span> keita_kawamoto</small>
+      </p>
+    </footer>
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-83267965-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-83267965-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>

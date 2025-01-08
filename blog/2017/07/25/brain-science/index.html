@@ -1,135 +1,113 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="author" content="keita_kawamoto">
-  <meta name="description" content="デザインをするとき、「影があれば浮き出て見えるので、影の有無によって主張レベルをコントロールできる」などといった様々な仮説に基づき設計しますが、なぜ影があれば浮き出て見えるのでしょう。その「なぜ」について調べてみました。">
-  
-    <title>影があるとなぜ立体だと認識するのか？インターフェイスの仮説を脳科学から考える &nbsp;-&nbsp; Orangebomb</title>
-  
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="keita_kawamoto">
-  <meta name="twitter:creator" content="keita_kawamoto">
-  <meta name="twitter:title" content="影があるとなぜ立体だと認識するのか？インターフェイスの仮説を脳科学から考える - Orangebomb">
-  <meta name="twitter:url" content="https://blog.orangebomb.org/blog/2017/07/25/brain-science/">
-  <meta name="twitter:description" content="デザインをするとき、「影があれば浮き出て見えるので、影の有無によって主張レベルをコントロールできる」などといった様々な仮説に基づき設計しますが、なぜ影があれば浮き出て見えるのでしょう。その「なぜ」について調べてみました。">
-  
-  <meta property="og:title" content="影があるとなぜ立体だと認識するのか？インターフェイスの仮説を脳科学から考える">
-  <meta property="og:url" content="https://blog.orangebomb.org/blog/2017/07/25/brain-science/">
-  <meta property="og:description" content="デザインをするとき、「影があれば浮き出て見えるので、影の有無によって主張レベルをコントロールできる」などといった様々な仮説に基づき設計しますが、なぜ影があれば浮き出て見えるのでしょう。その「なぜ」について調べてみました。">
-  
-  
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="keita_kawamoto">
+    <meta name="description" content="デザインをするとき、「影があれば浮き出て見えるので、影の有無によって主張レベルをコントロールできる」などといった様々な仮説に基づき設計しますが、なぜ影があれば浮き出て見えるのでしょう。その「なぜ」について調べてみました。">
+    <title>影があるとなぜ立体だと認識するのか？インターフェイスの仮説を脳科学から考える - Orangebomb</title>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="keita_kawamoto">
+    <meta name="twitter:creator" content="keita_kawamoto">
+    <meta name="twitter:title" content="影があるとなぜ立体だと認識するのか？インターフェイスの仮説を脳科学から考える - Orangebomb">
+    <meta name="twitter:url" content="https://blog.orangebomb.org/blog/2017/07/25/brain-science/">
+    <meta name="twitter:description" content="デザインをするとき、「影があれば浮き出て見えるので、影の有無によって主張レベルをコントロールできる」などといった様々な仮説に基づき設計しますが、なぜ影があれば浮き出て見えるのでしょう。その「なぜ」について調べてみました。">
+    <meta property="og:title" content="影があるとなぜ立体だと認識するのか？インターフェイスの仮説を脳科学から考える">
+    <meta property="og:url" content="https://blog.orangebomb.org/blog/2017/07/25/brain-science/">
+    <meta property="og:description" content="デザインをするとき、「影があれば浮き出て見えるので、影の有無によって主張レベルをコントロールできる」などといった様々な仮説に基づき設計しますが、なぜ影があれば浮き出て見えるのでしょう。その「なぜ」について調べてみました。">
     <meta property="og:image" content="https://blog.orangebomb.org/images/post/20170725brain-science/ogp.png">
     <meta name="twitter:image" content="https://blog.orangebomb.org/images/post/20170725brain-science/ogp.png">
-  
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/header.css">
-  <link rel="stylesheet" href="/css/contents.css">
-  <link rel="stylesheet" href="/css/footer.css">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Karla|Source+Code+Pro">
-  <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/images/apple-touch-icon-192-precomposed.png">
-  <link rel="shortcut icon" href="/images/favicon.ico">
-  <link rel="canonical" href="https://blog.orangebomb.org/blog/2017/07/25/brain-science/">
-</head>
-
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contents.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Karla|Source+Code+Pro">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/images/apple-touch-icon-192-precomposed.png">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="canonical" href="https://blog.orangebomb.org/blog/2017/07/25/brain-science/">
+  </head>
   <body>
     <div class="header">
-  <div class="header-inner">
-    <header>
-      <h1 class="logo"><a href="https://blog.orangebomb.org"><img src="https://blog.orangebomb.org/images/logo.svg" alt="Orangebomb"></a></h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="/">ARCHIVES</a></li>
-          <li><a href="/tags">TAGS</a></li>
-          <li><a href="/profile.html">PROFILE</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-</div>
-
+      <div class="header-inner">
+        <header>
+          <h1 class="logo"><a href="https://blog.orangebomb.org"><img src="https://blog.orangebomb.org/images/logo.svg" alt="Orangebomb"></a></h1>
+          <nav>
+            <ul class="menu">
+              <li><a href="/">ARCHIVES</a></li>
+              <li><a href="/tags">TAGS</a></li>
+              <li><a href="/profile.html">PROFILE</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
     <div class="container">
       <article>
-  <div class="post">
-    <header>
-      <h1><a href="https://blog.orangebomb.org/blog/2017/07/25/brain-science/">影があるとなぜ立体だと認識するのか？インターフェイスの仮説を脳科学から考える</a></h1>
-      <div class="post-date">
-        <div class="day">
-          <time datetime="2017-07-25">2017-07-25</time>
+        <div class="post">
+          <header>
+            <h1><a href="https://blog.orangebomb.org/blog/2017/07/25/brain-science/">影があるとなぜ立体だと認識するのか？インターフェイスの仮説を脳科学から考える</a></h1>
+            <div class="post-date">
+              <div class="day">
+                <time datetime="2017-07-25">2017-07-25</time>
+              </div>
+              <div class="tags">
+                <i class="fa fa-tags tag-icon" aria-hidden="true"></i>
+                <span class="sr-only">Tags</span>
+                <ul>
+                  <li><a class="tag-link" href="/tags/interface-interaction/">インターフェイス/インタラクション</a></li>
+                  <li><a class="tag-link" href="/tags/cognitive-science-principle-rule/">認知科学/原理/法則</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+          <div class="post-inner">
+            <p>デザインをするとき、様々な仮説に基づき、設計する。「影があれば浮き出て見えるので、影の有無によって主張レベルをコントロールできる」「黄色は主張する色なので、このコンテンツにふさわしい」「色は薄くしたりグレーにすれば非アクティブと認識する。アクティブなものだけ色を濃くしよう」など。</p>
+            <p>理解できるし、正しいはずだ。</p>
+            <p>でもどうして「影があれば浮き出て見える」のだろう？僕にはその説明ができなかった。錯覚するから？ならばなぜ錯覚する？実際は平面でしかないじゃないか。</p>
+            <p>自分の作ったものを人に説明するとき前述のような解説をするが、心の中では、どこか腑に落ちない感じがしていた。「自分自身がそう感じるから、誰もが同じはずだ」本当にそうだろうか？</p>
+            <p>謎を謎のままにして進めることをしたくなかったので</p>
+            <ul>
+              <li>影があれば浮き出て見えるのはなぜか</li>
+              <li>色は薄くしたりグレーにすれば非アクティブと認識するのはなぜか</li>
+            </ul>
+            <p>今回はこの２点の事象について調べてみた。</p>
+            <div class="iframe-slideshare">
+              <iframe src="//www.slideshare.net/slideshow/embed_code/key/Fnj5btpUw75koy" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen=""></iframe>
+              <a href="//www.slideshare.net/keitakawamoto/ss-78220226" title="インターフェイスの仮説を脳科学から考える">インターフェイスの仮説を脳科学から考える</a>
+            </div>
+            <h2 id="出典参考文献">出典・参考文献</h2>
+            <p>以下の文献の情報を参考にしました。</p>
+            <ul>
+              <li><a href="https://www.amazon.co.jp/Mind-Hacks-%E2%80%95%E5%AE%9F%E9%A8%93%E3%81%A7%E7%9F%A5%E3%82%8B%E8%84%B3%E3%81%A8%E5%BF%83%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0-Tom-Stafford/dp/4873112710">Tom Stafford・Matt Webb 『Mind Hacks 実験で知る脳と心のシステム』 夏目 大 訳、オライリージャパン、2005年、ISBN4-87311-271-0</a></li>
+            </ul>
+            <h2 id="まとめ終えて">まとめ終えて</h2>
+            <p>実はこの資料は2015年にGMOペパボの社内デザイナー勉強会にて発表したものだ。「ブログを作りたいから、それまでとっとこう」と思ってアップロードしていなかった。ようやく実現できた。ブログを作るのが楽しいものだからテンプレートをいじくりまわすことにばかり時間を割いてしまったり、いざ投稿しようと思ったら先にSSL化しないとまずいと気付いたり。まだ溜まっている投稿ネタがいくつかあるので、近いうちにそちらも公開したい。</p>
+            <p>このスライドを作ったことによって、人間が錯覚する「理由」の一部がわかった。すごく面白い。デザイナーが作ったものを利用するのは同じ人間だ。なので、人間の仕組みについてよく理解しておいた方が絶対にいいものが作れるはずだ。僕はこれからも疑問に持ったことは一つずつ解決していきたい。「そこまでしないといけないの？」というより、純粋に僕自身にとってめちゃくちゃおもしろい。</p>
+          </div>
         </div>
-        <div class="tags">
-          <i class="fa fa-tags tag-icon" aria-hidden="true"></i>
-          <span class="sr-only">Tags</span>
-          <ul>
-            <li><a class="tag-link" href="/tags/interface-interaction/">インターフェイス/インタラクション</a></li>
-            <li><a class="tag-link" href="/tags/cognitive-science-principle-rule/">認知科学/原理/法則</a></li>
-          </ul>
-        </div>
+      </article>
+      <div class="social-btn">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
-    </header>
-    <div class="post-inner">
-      <p>デザインをするとき、様々な仮説に基づき、設計する。「影があれば浮き出て見えるので、影の有無によって主張レベルをコントロールできる」「黄色は主張する色なので、このコンテンツにふさわしい」「色は薄くしたりグレーにすれば非アクティブと認識する。アクティブなものだけ色を濃くしよう」など。</p>
-<p>理解できるし、正しいはずだ。</p>
-<p>でもどうして「影があれば浮き出て見える」のだろう？僕にはその説明ができなかった。錯覚するから？ならばなぜ錯覚する？実際は平面でしかないじゃないか。</p>
-<p>自分の作ったものを人に説明するとき前述のような解説をするが、心の中では、どこか腑に落ちない感じがしていた。「自分自身がそう感じるから、誰もが同じはずだ」本当にそうだろうか？</p>
-<p>謎を謎のままにして進めることをしたくなかったので</p>
-<ul>
-<li>影があれば浮き出て見えるのはなぜか</li>
-<li>色は薄くしたりグレーにすれば非アクティブと認識するのはなぜか</li>
-</ul>
-<p>今回はこの２点の事象について調べてみた。</p>
-
-<div class="iframe-slideshare">
-  <iframe src="//www.slideshare.net/slideshow/embed_code/key/Fnj5btpUw75koy" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen=""></iframe>
-  <a href="//www.slideshare.net/keitakawamoto/ss-78220226" title="インターフェイスの仮説を脳科学から考える">インターフェイスの仮説を脳科学から考える</a>
-</div>
-
-<h2 id="出典参考文献">出典・参考文献</h2>
-<p>以下の文献の情報を参考にしました。</p>
-<ul>
-<li><a href="https://www.amazon.co.jp/Mind-Hacks-%E2%80%95%E5%AE%9F%E9%A8%93%E3%81%A7%E7%9F%A5%E3%82%8B%E8%84%B3%E3%81%A8%E5%BF%83%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0-Tom-Stafford/dp/4873112710">Tom Stafford・Matt Webb 『Mind Hacks 実験で知る脳と心のシステム』 夏目 大 訳、オライリージャパン、2005年、ISBN4-87311-271-0</a></li>
-</ul>
-<h2 id="まとめ終えて">まとめ終えて</h2>
-<p>実はこの資料は2015年にGMOペパボの社内デザイナー勉強会にて発表したものだ。「ブログを作りたいから、それまでとっとこう」と思ってアップロードしていなかった。ようやく実現できた。
-ブログを作るのが楽しいものだからテンプレートをいじくりまわすことにばかり時間を割いてしまったり、いざ投稿しようと思ったら先にSSL化しないとまずいと気付いたり。まだ溜まっている投稿ネタがいくつかあるので、近いうちにそちらも公開したい。</p>
-<p>このスライドを作ったことによって、人間が錯覚する「理由」の一部がわかった。すごく面白い。
-デザイナーが作ったものを利用するのは同じ人間だ。なので、人間の仕組みについてよく理解しておいた方が絶対にいいものが作れるはずだ。
-僕はこれからも疑問に持ったことは一つずつ解決していきたい。
-「そこまでしないといけないの？」というより、純粋に僕自身にとってめちゃくちゃ面白い。</p>
-
     </div>
-  </div>
-</article>
-
-<div class="social-btn">
-  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
-    </div>
-<footer class="footer">
-  <div class="author">
-    <div class="author-image"></div>
-    <p class="author-name"><a href="https://twitter.com/keita_kawamoto">@keita_kawamoto</a></p>
-    <p class="author-bio">Web Designer. <a href="/profile.html">Profile</a></p>
-  </div>
-  <p class="copyright">
-    <small><span class="copy-c">&copy;</span> keita_kawamoto</small>
-  </p>
-</footer>
-
+    <footer class="footer">
+      <div class="author">
+        <div class="author-image"></div>
+        <p class="author-name"><a href="https://twitter.com/keita_kawamoto">@keita_kawamoto</a></p>
+        <p class="author-bio">Web Designer. <a href="/profile.html">Profile</a></p>
+      </div>
+      <p class="copyright">
+        <small><span class="copy-c">&copy;</span> keita_kawamoto</small>
+      </p>
+    </footer>
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-83267965-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-83267965-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>

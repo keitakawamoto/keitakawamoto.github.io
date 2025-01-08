@@ -1,156 +1,140 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="author" content="keita_kawamoto">
-  <meta name="description" content="アナグリフとは、「立体写真」のことです。ここではPhotoshopを利用して、一枚の写真を昔懐かしいアナグリフ方式の写真へ加工する手順を紹介します">
-  
-    <title>Photoshopを使って一枚の画像でアナグリフ（3D画像）を作るチュートリアル &nbsp;-&nbsp; Orangebomb</title>
-  
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="keita_kawamoto">
-  <meta name="twitter:creator" content="keita_kawamoto">
-  <meta name="twitter:title" content="Photoshopを使って一枚の画像でアナグリフ（3D画像）を作るチュートリアル - Orangebomb">
-  <meta name="twitter:url" content="https://blog.orangebomb.org/blog/2017/12/10/anaglyph/">
-  <meta name="twitter:description" content="アナグリフとは、「立体写真」のことです。ここではPhotoshopを利用して、一枚の写真を昔懐かしいアナグリフ方式の写真へ加工する手順を紹介します">
-  
-  <meta property="og:title" content="Photoshopを使って一枚の画像でアナグリフ（3D画像）を作るチュートリアル">
-  <meta property="og:url" content="https://blog.orangebomb.org/blog/2017/12/10/anaglyph/">
-  <meta property="og:description" content="アナグリフとは、「立体写真」のことです。ここではPhotoshopを利用して、一枚の写真を昔懐かしいアナグリフ方式の写真へ加工する手順を紹介します">
-  
-  
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="keita_kawamoto">
+    <meta name="description" content="アナグリフとは、「立体写真」のことです。ここではPhotoshopを利用して、一枚の写真を昔懐かしいアナグリフ方式の写真へ加工する手順を紹介します。">
+    <title>Photoshopを使って一枚の画像でアナグリフ（3D画像）を作るチュートリアル - Orangebomb</title>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="keita_kawamoto">
+    <meta name="twitter:creator" content="keita_kawamoto">
+    <meta name="twitter:title" content="Photoshopを使って一枚の画像でアナグリフ（3D画像）を作るチュートリアル - Orangebomb">
+    <meta name="twitter:url" content="https://blog.orangebomb.org/blog/2017/12/10/anaglyph/">
+    <meta name="twitter:description" content="アナグリフとは、「立体写真」のことです。ここではPhotoshopを利用して、一枚の写真を昔懐かしいアナグリフ方式の写真へ加工する手順を紹介します。">
+    <meta property="og:title" content="Photoshopを使って一枚の画像でアナグリフ（3D画像）を作るチュートリアル">
+    <meta property="og:url" content="https://blog.orangebomb.org/blog/2017/12/10/anaglyph/">
+    <meta property="og:description" content="アナグリフとは、「立体写真」のことです。ここではPhotoshopを利用して、一枚の写真を昔懐かしいアナグリフ方式の写真へ加工する手順を紹介します。">
     <meta property="og:image" content="https://blog.orangebomb.org/images/post/20171210anaglyph/ogp.png">
     <meta name="twitter:image" content="https://blog.orangebomb.org/images/post/20171210anaglyph/ogp.png">
-  
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/header.css">
-  <link rel="stylesheet" href="/css/contents.css">
-  <link rel="stylesheet" href="/css/footer.css">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Karla|Source+Code+Pro">
-  <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/images/apple-touch-icon-192-precomposed.png">
-  <link rel="shortcut icon" href="/images/favicon.ico">
-  <link rel="canonical" href="https://blog.orangebomb.org/blog/2017/12/10/anaglyph/">
-</head>
-
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contents.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Karla|Source+Code+Pro">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/images/apple-touch-icon-192-precomposed.png">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="canonical" href="https://blog.orangebomb.org/blog/2017/12/10/anaglyph/">
+  </head>
   <body>
     <div class="header">
-  <div class="header-inner">
-    <header>
-      <h1 class="logo"><a href="https://blog.orangebomb.org"><img src="https://blog.orangebomb.org/images/logo.svg" alt="Orangebomb"></a></h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="/">ARCHIVES</a></li>
-          <li><a href="/tags">TAGS</a></li>
-          <li><a href="/profile.html">PROFILE</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-</div>
-
+      <div class="header-inner">
+        <header>
+          <h1 class="logo"><a href="https://blog.orangebomb.org"><img src="https://blog.orangebomb.org/images/logo.svg" alt="Orangebomb"></a></h1>
+          <nav>
+            <ul class="menu">
+              <li><a href="/">ARCHIVES</a></li>
+              <li><a href="/tags">TAGS</a></li>
+              <li><a href="/profile.html">PROFILE</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
     <div class="container">
       <article>
-  <div class="post">
-    <header>
-      <h1><a href="https://blog.orangebomb.org/blog/2017/12/10/anaglyph/">Photoshopを使って一枚の画像でアナグリフ（3D画像）を作るチュートリアル</a></h1>
-      <div class="post-date">
-        <div class="day">
-          <time datetime="2017-12-10">2017-12-10</time>
+        <div class="post">
+          <header>
+            <h1><a href="https://blog.orangebomb.org/blog/2017/12/10/anaglyph/">Photoshopを使って一枚の画像でアナグリフ（3D画像）を作るチュートリアル</a></h1>
+            <div class="post-date">
+              <div class="day">
+                <time datetime="2017-12-10">2017-12-10</time>
+              </div>
+              <div class="tags">
+                <i class="fa fa-tags tag-icon" aria-hidden="true"></i>
+                <span class="sr-only">Tags</span>
+                <ul>
+                  <li><a class="tag-link" href="/tags/tutorial/">チュートリアル</a></li>
+                  <li><a class="tag-link" href="/tags/cognitive-science-principle-rule/">認知科学/原理/法則</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+          <div class="post-inner">
+            <p><img src="/images/post/20171210anaglyph/ogp.png" alt="Anaglyph Photoshop Tutorial"></p>
+            <p>アナグリフとは「立体写真」のことです。レンズ部分が片方は青・もう片方は赤の透明シートでできているメガネで見ると、立体的に見える例のアレですね。その昔懐かしい立体写真や、今や3D映画でおなじみの立体映像は、1853年にRollmanという人が原理を導いたとされる「アナグリフ方式」、その後「シャッター方式」「偏光方式」など変化してきています。ここではPhotoshopを利用して、一枚の写真を昔懐かしいアナグリフ方式の写真へ加工する手順を紹介します。</p>
+            <h2 id="応用のために原理を知る">応用のために原理を知る</h2>
+            <p>三次元認識の原理のひとつは、二つの視点です。人間の目は、左右別々の位置にあります。当然、片目をつぶって見ると微妙に見える角度が変わります。これが「両眼視差」と呼ばれるものです。三次元認識には他に「遠近法的手がかり」「遮蔽関係」「明瞭さ」「運動視差」などがありますが、アナグリフでは「両眼視差」を利用します。左右の目でそれぞれ微妙にズレた状態を眼を通して網膜に映すことで、脳が立体像として認知します。</p>
+            <p>眼の前数センチの距離にあるものを見るとブレて見え、離れたものを見るとブレずくっきり見えるように、眼球から距離があればあるほど視差は小さくなります。<strong>よって、アナグリフで画像をブラす度合いの調整次第で立体像の見え方が変わります。</strong></p>
+            <p>現実世界でやっていることを、平面上で再現し脳に「錯覚」を起こさせるというのが仕組みです。</p>
+            <h2 id="補足">補足</h2>
+            <p>ちゃんとした立体像を作る場合、一枚の画像ではなく微妙にズレた二枚の写真を用意するとより自然に近い立体像を作ることができます。要するに両目で見たその状況のままを二枚の画像で再現するわけです。二枚の画像でアナグリフを作成するのは、また別の機会に…。</p>
+            <h2 id="操作手順">操作手順</h2>
+            <p>まずは加工する画像を用意します。</p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_1.png" alt="今回の画像加工に使う画像素材"></p>
+            <p>今回は<a href="https://unsplash.com/">unsplash.com</a>で無料配布されている<a href="https://unsplash.com/photos/2awzIErSaG0">この画像</a>を使います。</p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_2.png" alt="人物を切り抜き"></p>
+            <p>まずは選択ツールや「選択とマスク」等を利用し、人物を切り抜きます。</p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_3.png" alt="背景部分は人物の部分の周囲を消し、背景と同化させる"></p>
+            <p>赤青の3Dメガネで見たとき、背景部分の人物がそのままの状態では、上に重ねる人物と重なって二重に見えてしまいます。それを防止するために、人物の周囲をある程度背景に同化させます。方法はなんでも構いません、僕の場合は「コピースタンプツール」を使いました。</p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_4.png" alt="レイヤーを表示"></p>
+            <p>ここからがアナグリフ加工の本番です。用意した背景と人物をどちらも表示させ重ねます。</p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_5.png" alt="背景と人物をそれぞれひとつずつ複製する"></p>
+            <p>アナグリフは前述の通り、左右の眼が「ズレ」を認識し立体像として脳が錯覚を起こします。そのために、背景と人物はそれぞれ一つずつ複製し、ずらせるように二つずつになるようにしておきます。</p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_6.png" alt="人物レイヤーに効果をかける"></p>
+            <p>まずは人物から加工を行います。人物レイヤーを選択し、レイヤーツール下方にある「fx」というアイコンをクリックし「レイヤー効果」を選択します。</p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_7.png" alt="「高度な合成」の項目の「チャンネル」を「R」のみチェックが入っている状態にする"></p>
+            <p>レイヤースタイルパネルが表示されるので、「高度な合成」の項目の「チャンネル」を「R」のみチェックが入っている状態にします。</p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_8.png" alt="人物レイヤーのもう片方には別の効果をかける"></p>
+            <p><strong>もう片方の人物レイヤーには別の効果をかけます。</strong> こちらは先ほどと逆に「チャンネル」を「G」と「B」のみチェックが入っている状態にします。</p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_9.png" alt="効果をかけるとレイヤーの右側に「効果付き」を示すアイコンが表示される"></p>
+            <p>二つとも効果をかけることができました。レイヤーの右側に「効果付き」を示すアイコンが表示されます。しかしこのままでは画像になんの変化もありません。</p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_10.png" alt="人物レイヤーをそれぞれ左右にずらす"></p>
+            <p>効果は人物レイヤーをずらすと現れます。それぞれ右・左にずらしましょう。この人物は背景と比較し、 <strong>見る側にとって背景より近くにいる</strong> ので、視差は大きいはずです。よって大きめにずらします。</p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_11.png" alt="背景も同じように効果を適用しずらす"></p>
+            <p>背景にも同じように効果を適用し、それぞれずらします。ただし人物よりも遠くに存在するものです。よって視差は小さいので、人物よりも少なめにずらします。 <strong>人物と背景のこのズレ具合の違いが立体感を引き出します。</strong></p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_12.png" alt="画像をトリミング"></p>
+            <p>背景をずらしたことで、両サイドに隙間が生まれます。トリミングしてしまいましょう。</p>
+            <p><img src="/images/post/20171210anaglyph/20171210anaglyph_13.png" alt="完成図"></p>
+            <p>これで完成です！赤青の3Dメガネを用意し、実際に見てみましょう！</p>
+            <h2 id="出典参考文献">出典・参考文献</h2>
+            <p>以下の文献の情報を参考にしました。</p>
+            <ul>
+              <li><a href="https://ja.wikipedia.org/wiki/%E8%A6%96%E5%B7%AE">視差 - Wikipedia</a></li>
+              <li><a href="http://mcm-www.jwu.ac.jp/~physm/buturi06/sikaku/st2a.html">アナグリフ</a></li>
+              <li><a href="https://ja.wikipedia.org/wiki/3%E6%AC%A1%E5%85%83%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4">3次元ディスプレイ - Wikipedia</a></li>
+              <li><a href="https://www.amazon.co.jp/Mind-Hacks-%E2%80%95%E5%AE%9F%E9%A8%93%E3%81%A7%E7%9F%A5%E3%82%8B%E8%84%B3%E3%81%A8%E5%BF%83%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0-Tom-Stafford/dp/4873112710">Tom Stafford・Matt Webb 『Mind Hacks 実験で知る脳と心のシステム』 夏目 大 訳、オライリージャパン、2005年、ISBN4-87311-271-0</a></li>
+              <li><a href="http://sucra.saitama-u.ac.jp/modules/xoonips/download.php/BKSJ500005.pdf?file_id=33164">アナグリフはなぜ飛び出して見えるのか-立太子をテーマにした系統的学習の試み-</a></li>
+              <li><a href="https://blog.spoongraphics.co.uk/tutorials/how-to-create-anaglyph-3d-images-that-really-work">How To Create Anaglyph 3D Images That Really Work!</a></li>
+            </ul>
+            <h2 id="所感">所感</h2>
+            <p>Photoshopのチュートリアル記事でした。いろいろ調べてみたものの、アナグリフのチュートリアルは少ないようだったので作成しました。背景の加工をはじめ、このやり方以外にもっとよりスマートなやり方がある気がします。「アドオンを使う」などではなく、テクニックとしてもっといいやり方をご存知の方はぜひ教えてください。あと原理部分、解釈が誤っている場合もご指摘ください！</p>
+            <p>（あと背景合成、後ろの壁の調整をミスってることに作った後気付いた）</p>
+          </div>
         </div>
-        <div class="tags">
-          <i class="fa fa-tags tag-icon" aria-hidden="true"></i>
-          <span class="sr-only">Tags</span>
-          <ul>
-            <li><a class="tag-link" href="/tags/tutorial/">チュートリアル</a></li>
-            <li><a class="tag-link" href="/tags/cognitive-science-principle-rule/">認知科学/原理/法則</a></li>
-          </ul>
-        </div>
+      </article>
+      <div class="social-btn">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
-    </header>
-    <div class="post-inner">
-      <p><img src="/images/post/20171210anaglyph/ogp.png" alt="Anaglyph Photoshop Tutorial"></p>
-<p>アナグリフとは「立体写真」のことです。レンズ部分が片方は青・もう片方は赤の透明シートでできているメガネで見ると、立体的に見える例のアレですね。その昔懐かしい立体写真や、今や3D映画でおなじみの立体映像は、1853年にRollmanという人が原理を導いたとされる「アナグリフ方式」、その後「シャッター方式」「偏光方式」など変化してきています。ここではPhotoshopを利用して、一枚の写真を昔懐かしいアナグリフ方式の写真へ加工する手順を紹介します。</p>
-<h2 id="応用のために原理を知る">応用のために原理を知る</h2>
-<p>三次元認識の原理のひとつは、二つの視点です。人間の目は、左右別々の位置にあります。当然、片目をつぶって見ると微妙に見える角度が変わります。これが「両眼視差」と呼ばれるものです。三次元認識には他に「遠近法的手がかり」「遮蔽関係」「明瞭さ」「運動視差」などがありますが、アナグリフでは「両眼視差」を利用します。左右の目でそれぞれ微妙にズレた状態を眼を通して網膜に映すことで、脳が立体像として認知します。</p>
-<p>眼の前数センチの距離にあるものを見るとブレて見え、離れたものを見るとブレずくっきり見えるように、眼球から距離があればあるほど視差は小さくなります。<strong>よって、アナグリフで画像をブラす度合いの調整次第で立体像の見え方が変わります。</strong></p>
-<p>現実世界でやっていることを、平面上で再現し脳に「錯覚」を起こさせるというのが仕組みです。</p>
-<h2 id="補足">補足</h2>
-<p>ちゃんとした立体像を作る場合、一枚の画像ではなく微妙にズレた二枚の写真を用意するとより自然に近い立体像を作ることができます。要するに両目で見たその状況のままを二枚の画像で再現するわけです。二枚の画像でアナグリフを作成するのは、また別の機会に…。</p>
-<h2 id="操作手順">操作手順</h2>
-<p>まずは加工する画像を用意します。</p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_1.png" alt="今回の画像加工に使う画像素材"></p>
-<p>今回は<a href="https://unsplash.com/">unsplash.com</a>で無料配布されている<a href="https://unsplash.com/photos/2awzIErSaG0">この画像</a>を使います。</p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_2.png" alt="人物を切り抜き"></p>
-<p>まずは選択ツールや「選択とマスク」等を利用し、人物を切り抜きます。</p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_3.png" alt="背景部分は人物の部分の周囲を消し、背景と同化させる"></p>
-<p>赤青の3Dメガネで見たとき、背景部分の人物がそのままの状態では、上に重ねる人物と重なって二重に見えてしまいます。それを防止するために、人物の周囲をある程度背景に同化させます。方法はなんでも構いません、僕の場合は「コピースタンプツール」を使いました。</p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_4.png" alt="レイヤーを表示"></p>
-<p>ここからがアナグリフ加工の本番です。用意した背景と人物をどちらも表示させ重ねます。</p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_5.png" alt="背景と人物をそれぞれひとつずつ複製する"></p>
-<p>アナグリフは前述の通り、左右の眼が「ズレ」を認識し立体像として脳が錯覚を起こします。そのために、背景と人物はそれぞれ一つずつ複製し、ずらせるように二つずつになるようにしておきます。</p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_6.png" alt="人物レイヤーに効果をかける"></p>
-<p>まずは人物から加工を行います。人物レイヤーを選択し、レイヤーツール下方にある「fx」というアイコンをクリックし「レイヤー効果」を選択します。</p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_7.png" alt="「高度な合成」の項目の「チャンネル」を「R」のみチェックが入っている状態にする"></p>
-<p>レイヤースタイルパネルが表示されるので、「高度な合成」の項目の「チャンネル」を「R」のみチェックが入っている状態にします。</p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_8.png" alt="人物レイヤーのもう片方には別の効果をかける"></p>
-<p><strong>もう片方の人物レイヤーには別の効果をかけます。</strong> こちらは先ほどと逆に「チャンネル」を「G」と「B」のみチェックが入っている状態にします。</p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_9.png" alt="効果をかけるとレイヤーの右側に「効果付き」を示すアイコンが表示される"></p>
-<p>二つとも効果をかけることができました。レイヤーの右側に「効果付き」を示すアイコンが表示されます。しかしこのままでは画像になんの変化もありません。</p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_10.png" alt="人物レイヤーをそれぞれ左右にずらす"></p>
-<p>効果は人物レイヤーをずらすと現れます。それぞれ右・左にずらしましょう。この人物は背景と比較し、 <strong>見る側にとって背景より近くにいる</strong> ので、視差は大きいはずです。よって大きめにずらします。</p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_11.png" alt="背景も同じように効果を適用しずらす"></p>
-<p>背景にも同じように効果を適用し、それぞれずらします。ただし人物よりも遠くに存在するものです。よって視差は小さいので、人物よりも少なめにずらします。 <strong>人物と背景のこのズレ具合の違いが立体感を引き出します。</strong></p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_12.png" alt="画像をトリミング"></p>
-<p>背景をずらしたことで、両サイドに隙間が生まれます。トリミングしてしまいましょう。</p>
-<p><img src="/images/post/20171210anaglyph/20171210anaglyph_13.png" alt="完成図"></p>
-<p>これで完成です！赤青の3Dメガネを用意し、実際に見てみましょう！</p>
-<h2 id="出典参考文献">出典・参考文献</h2>
-<p>以下の文献の情報を参考にしました。</p>
-<ul>
-<li><a href="https://ja.wikipedia.org/wiki/%E8%A6%96%E5%B7%AE">視差 - Wikipedia</a></li>
-<li><a href="http://mcm-www.jwu.ac.jp/~physm/buturi06/sikaku/st2a.html">アナグリフ</a></li>
-<li><a href="https://ja.wikipedia.org/wiki/3%E6%AC%A1%E5%85%83%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4">3次元ディスプレイ - Wikipedia</a></li>
-<li><a href="https://www.amazon.co.jp/Mind-Hacks-%E2%80%95%E5%AE%9F%E9%A8%93%E3%81%A7%E7%9F%A5%E3%82%8B%E8%84%B3%E3%81%A8%E5%BF%83%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0-Tom-Stafford/dp/4873112710">Tom Stafford・Matt Webb 『Mind Hacks 実験で知る脳と心のシステム』 夏目 大 訳、オライリージャパン、2005年、ISBN4-87311-271-0</a></li>
-<li><a href="http://sucra.saitama-u.ac.jp/modules/xoonips/download.php/BKSJ500005.pdf?file_id=33164">アナグリフはなぜ飛び出して見えるのか-立太子をテーマにした系統的学習の試み-</a></li>
-<li><a href="https://blog.spoongraphics.co.uk/tutorials/how-to-create-anaglyph-3d-images-that-really-work">How To Create Anaglyph 3D Images That Really Work!</a></li>
-</ul>
-<h2 id="所感">所感</h2>
-<p>Photoshopのチュートリアル記事でした。いろいろ調べてみたものの、アナグリフのチュートリアルは少ないようだったので作成しました。背景の加工をはじめ、このやり方以外にもっとよりスマートなやり方がある気がします。「アドオンを使う」などではなく、テクニックとしてもっといいやり方をご存知の方はぜひ教えてください。あと原理部分、解釈が誤っている場合もご指摘ください！</p>
-<p>（あと背景合成、後ろの壁の調整をミスってることに作った後気付いた）</p>
-
     </div>
-  </div>
-</article>
-
-<div class="social-btn">
-  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
-    </div>
-<footer class="footer">
-  <div class="author">
-    <div class="author-image"></div>
-    <p class="author-name"><a href="https://twitter.com/keita_kawamoto">@keita_kawamoto</a></p>
-    <p class="author-bio">Web Designer. <a href="/profile.html">Profile</a></p>
-  </div>
-  <p class="copyright">
-    <small><span class="copy-c">&copy;</span> keita_kawamoto</small>
-  </p>
-</footer>
-
+    <footer class="footer">
+      <div class="author">
+        <div class="author-image"></div>
+        <p class="author-name"><a href="https://twitter.com/keita_kawamoto">@keita_kawamoto</a></p>
+        <p class="author-bio">Web Designer. <a href="/profile.html">Profile</a></p>
+      </div>
+      <p class="copyright">
+        <small><span class="copy-c">&copy;</span> keita_kawamoto</small>
+      </p>
+    </footer>
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-83267965-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-83267965-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>
